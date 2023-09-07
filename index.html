@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS A NUMBER</title>
+</head>
+<style>
+    #container{
+        margin:auto;
+        border:5px solid lightBlue;
+        font-size:30px;
+        padding:10px;
+        text-align:center;
+        height:250px;
+        width:500px;
+        background-color:#0e2431;
+    }
+    p{
+        color:white;
+    }
+    #userInput{
+        width:150px;
+        height:25px;
+    }
+    #outputText{
+        color:red;
+    }
+</style>
+<body>
+    <div id="container">
+        <p>Guess a number between 1 and 100</p>
+        <p id="outputText">Enter a number below</p>
+        <input type="UserInput">
+        <button id="EnterButton">Enter</btooutton>
+        <button id="AgainButton">Play Again</button>
+    </div>
+    <script>
+        var enterButton = document.getElementById('UserInput').value
+        if(input == randomNumber){
+            output.innerHTML="You guessed right "+","+" it was" + randomNumber;
+            output.style.color="green";
+        }
+        else if(input>randomNumber && input<100){
+            output.innerHTML="You guessed too high";
+        }
+        else if(input<randomNumber && input>1){
+            output.innerHTML="You guessed too low";
+        }
+        else if(input<1){
+            output.innerHTML = "Higher, It has to be between 1 and 100";
+        }
+        else if(isNaN(input)){
+            output.innerHTML="That's not a number!";
+        }
+        else{
+            output.innerHTML="Low ,It has to be between 1 and 100";
+        }
+    
+
+    </script>
+</body>
+</html>
